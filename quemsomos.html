@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+
+<head>
+  <title>Chalé Monjolo</title>
+  <link rel="shortcut icon" href="image/icon.jpeg" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/estilo.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+
+</head>
+
+<body>
+  <section class="head">
+    <div class="container flex1">
+      <div class="scoial"> 
+      
+      </div>
+      <div class="logo">
+        <img src="image/logo.jpeg "width=50px height="50">
+      </div>
+      <div class="address">
+        <i class="fas fa-map-marker-alt"></i>
+        <span> Lapinha da Serra, Santana do Riacho-Mg</span>
+      </div>
+    </div>
+  </section>
+
+
+  <header class="header">
+    <div class="container">
+      <nav class="navbar flex1">
+        <div class="sticky_logo logo">
+          <img src="image/logo.jpeg"width=80px height=50px >
+        </div>
+
+        <ul class="nav-menu">
+          <li> <a href="index.html">Home</a> </li>
+          <li> <a class="nav-link active" href="quemsomos.html">Sobre Nos</a> </li>
+      
+          <li> <a href="nossosservicos.html">Servicos</a> </li>
+
+          <li> <a href="galeria.html">Galeria</a> </li>
+          
+          <li> <a href="contatos.html">Contato</a> </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <div class="head_contact">
+          <i class="fas fa-phone-volume"></i>
+          <span>(31)989024768</span>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", mobliemmenu);
+
+    function mobliemmenu() {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+
+    window.addEventListener("scroll", function() {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0)
+    })
+  </script>
+
+
+  <section class="home" id="home">
+    <div class="container">
+      <h1>Faça memórias</h1>
+      <p>Descubra o lugar onde voce se diverte e aproveita muito</p>
+
+      <div class="content grid">
+        
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="heading">
+       <!-- <h5>EXPLORE</h5>
+        <h2>Venha conhecer lapinha da Serra
+        </h2>-->
+      </div>
+
+      <div class="content flex  top">
+        <div class="left">
+          <h3>NOSSA HISTORIA
+          </h3>
+          <p>O chale monjolo, foi construido com o intuito de unir o rustico ao conforto, todo projeto, construcao e decoracao foram feitos pelos proprietrios,</p>
+          <p>resultado de um sonho, em sua composicao sao 40 m2 de deck estrategicamente posicionado para proporcionar aos hospedes a vista das montanhas e da lagoa, para apreciar o por do sol e as noites estreladas, nossa piscina de água quente é ideal para relaxar, todo conforto e aconchego que você precisa em uma hospedagem!</p>
+          
+          
+       
+        </div>
+        <div class="right">
+          <img src="image/capa.jpeg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="wrapper">
+    <div class="container">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <div class="heading">
+            <h5>SOBRE LAPINHA DA SERRA</h5>
+            <h3>Um pequeno vilarejo encantador</h3>
+          </div>
+          <p>Lapinha da Serra e um destino sensacional para quem ama explorar paisagens naturais! Localizado em Minas Gerais,
+            esse vilarejo encanta os turistas com seu charme e com diversos passeios  </p>
+          <p> para conhecer cachoeiras, pinturas rupestres e lindos rios.</p>
+        </div>
+        
+        <div class="item">
+          <div class="heading">
+            <h5>ATRATIVOS</h5>
+            <h3>O que fazer na Lapinha da Serra</h3>
+          </div>
+          <p>Se você busca se desconectar da cidade, esse é um local para se sentir em contato com a natureza! Entao, prepare o seu tenis e a roupa de banho para nadar em lindas cachoeiras,
+             </p>
+          <p>subir montanhas, fazer trilhas e praticar esportes.
+            </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: false,
+      navText: ["<i class='far fa-long-arrow-alt-left'></i>", "<i class='far fa-long-arrow-alt-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+
+  
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      dots: false,
+      navText: ["<i class='far fa-long-arrow-alt-left'></i>", "<i class='far fa-long-arrow-alt-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+
+ 
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: false,
+      dots: false,
+      autoplay: true,
+      slideTransition: 'linear',
+      autoplayTimeout: 4000,
+      autoplaySpeed: 4000,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        900: {
+          items: 3
+        },
+        800: {
+          items: 5
+        }
+      }
+    })
+  </script>
+
+
+  
+
+  <section class="map top">
+    <iframe data-v-7c859886="" width=800px height=350px
+     class="grid-map__frame" src="https://maps.google.com/maps?q=chale%20monjolo%20cozinha%20velha%20&amp;t=m&amp;z=13&amp;ie=UTF8&amp;output=embed"></iframe>
+  </section>
+
+
+  
+
+      
+
+        
+
+        
+
+        <div class="box">
+         
+          <div class="box ">
+          
+    
+            <ul style="text-align:center ; background-color:#CC8C18; "  >
+              <li>Rua cozinha velha, número 1, Lapinha da Serra, Santana do Riacho-Mg</li>
+              <li><i class="far fa-envelope"></i>chalemonjolo@gmail.com </li>
+              <li><i class="far fa-phone-alt"></i>(31)989024768</li>
+              <li><i class="fa-brands fa-instagram-square"></i> instagram </li>
+             
+            </ul>
+            
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+
+</html>

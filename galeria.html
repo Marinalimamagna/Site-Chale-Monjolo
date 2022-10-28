@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+
+<head>
+  <title>Chalé Monjolo</title>
+  <link rel="shortcut icon" href="image/icon.jpeg" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/estilo.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  
+
+</head>
+
+<body>
+  <section class="head">
+    <div class="container flex1">
+      <div class="scoial"> 
+      
+      </div>
+      <div class="logo">
+        <img src="image/logo.jpeg "width=50px height="50">
+      </div>
+      <div class="address">
+        <i class="fas fa-map-marker-alt"></i>
+        <span> Lapinha da Serra, Santana do Riacho-Mg</span>
+      </div>
+    </div>
+  </section>
+
+
+  <header class="header">
+    <div class="container">
+      <nav class="navbar flex1">
+        <div class="sticky_logo logo">
+          <img src="image/logo.jpeg"width=80px height=50px >
+        </div>
+
+        <ul class="nav-menu">
+          <li> <a href="index.html">Home</a> </li>
+          <li> <a href="quemsomos.html">Sobre Nos</a> </li>
+      
+          <li> <a href="nossosservicos.html">Servicos</a> </li>
+
+          <li> <a class="nav-link active" href="galeria.html">Galeria</a> </li>
+          
+          <li> <a href="contatos.html">Contato</a> </li>
+        </ul>
+        
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <div class="head_contact">
+          <i class="fas fa-phone-volume"></i>
+          <span>(31)989024768</span>
+        </div>
+      </nav>
+    </div>
+    
+  </header>
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", mobliemmenu);
+
+    function mobliemmenu() {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+
+    window.addEventListener("scroll", function() {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0)
+    })
+  </script>
+
+
+  <section class="home" id="home">
+    <div class="container">
+      <h1>Faça memórias</h1>
+      <p>Descubra o lugar onde voce se diverte e aproveita muito</p>
+
+      
+  </section>
+  <section class="container ">
+    <div class="gallery">
+      <a target="_blank" href="./image/home (15).jpeg">
+        <img src="./image/home (15).jpeg" alt="Cinque Terre" width="600" height="400">
+      </a>
+    </div>
+    <div class="gallery">
+      <a target="_blank" href="./image/home (13).jpeg">
+        <img src="./image/home (13).jpeg" alt="Cinque Terre" width="600" height="400">
+      </a>
+    </div>
+    <div class="gallery">
+      <a target="_blank" href="./image/home (19).jpeg">
+        <img src="./image/home (19).jpeg" alt="Cinque Terre" width="600" height="400">
+      </a>
+    </div>
+    <div class="gallery">
+      <a target="_blank" href="./image/home (17).jpeg">
+        <img src="./image/home (17).jpeg" alt="Cinque Terre" width="600" height="400">
+      </a>
+    </div>
+    <div class="gallery">
+      <a target="_blank" href="./image/a1.jpeg">
+        <img src="./image/a1.jpeg" alt="Cinque Terre" width="600" height="400">
+      </a>
+    </div>
+    <div class="gallery">
+      <a target="_blank" href="./image/a2.jpeg">
+        <img src="./image/a2.jpeg" alt="Cinque Terre" width="600" height="400">
+      </a>
+    </div>
+    <div class="gallery">
+      <a target="_blank" href="./image/a3.jpeg">
+        <img src="./image/a3.jpeg" alt="Cinque Terre" width="600" height="400">
+      </a>
+    </div>
+    <div class="gallery">
+      <a target="_blank" href="./image/a4.jpeg">
+        <img src="./image/a4.jpeg" alt="Cinque Terre" width="600" height="400">
+      </a>
+    </div>
+    <div class="gallery">
+      <a target="_blank" href="./image/a5.jpeg">
+        <img src="./image/a5.jpeg" alt="Cinque Terre" width="600" height="400">
+      </a>
+    </div>
+    <div class="gallery">
+      <a target="_blank" href="./image/a6.jpeg">
+        <img src="./image/a6.jpeg" alt="Cinque Terre" width="600" height="400">
+      </a>
+    </div>
+    <div class="gallery">
+      <a target="_blank" href="./image/a7.jpeg">
+        <img src="./image/a7.jpeg" alt="Cinque Terre" width="600" height="400">
+      </a>
+    </div>
+    <div class="gallery">
+      <a target="_blank" href="./image/a8.jpeg">
+        <img src="./image/a8.jpeg" alt="Cinque Terre" width="600" height="400">
+      </a>
+    </div>
+    <div class="gallery">
+      <a target="_blank" href="./image/a9.jpeg">
+        <img src="./image/a9.jpeg" alt="Cinque Terre" width="600" height="400">
+      </a>
+    </div>
+    <div class="gallery">
+      <a target="_blank" href="./image/a10.jpeg">
+        <img src="./image/a10.jpeg" alt="Cinque Terre" width="600" height="400">
+      </a>
+    </div>
+    <div>
+    
+  </section>
+  
+  
+      
+
+      
+
+
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: false,
+      navText: ["<i class='far fa-long-arrow-alt-left'></i>", "<i class='far fa-long-arrow-alt-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+
+  
+ 
+
+ 
+
+  
+  
+         
+          
+  </section>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      dots: false,
+      navText: ["<i class='far fa-long-arrow-alt-left'></i>", "<i class='far fa-long-arrow-alt-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+
+ 
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: false,
+      dots: false,
+      autoplay: true,
+      slideTransition: 'linear',
+      autoplayTimeout: 4000,
+      autoplaySpeed: 4000,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        900: {
+          items: 3
+        },
+        800: {
+          items: 5
+        }
+      }
+    })
+  </script>
+
+
+  
+
+  <section class="map top">
+    <iframe data-v-7c859886="" width=800px height=350px
+     class="grid-map__frame" src="https://maps.google.com/maps?q=chale%20monjolo%20cozinha%20velha%20&amp;t=m&amp;z=13&amp;ie=UTF8&amp;output=embed"></iframe>
+  </section>
+
+
+  
+
+      
+
+        
+
+        
+
+        <div class="box">
+         
+          <div class="box ">
+          
+    
+            <ul style="text-align:center ; background-color:#CC8C18; "  >
+              <li>Rua cozinha velha, número 1, Lapinha da Serra, Santana do Riacho-Mg</li>
+              <li><i class="far fa-envelope"></i>chalemonjolo@gmail.com </li>
+              <li><i class="far fa-phone-alt"></i>(31)989024768</li>
+              <li><i class="fa-brands fa-instagram-square"></i> instagram </li>
+             
+            </ul>
+            
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+
+</html>
